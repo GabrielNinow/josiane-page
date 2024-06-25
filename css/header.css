@@ -1,0 +1,33 @@
+#logo {
+    width: 4rem;
+    height: 4rem;
+}
+
+#search {
+    width: 2rem;
+    height: 2rem;
+}
+
+header,
+nav,
+header ul {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+ul#nav-item {
+    gap: 1rem;
+}
+
+header {
+    padding: 2rem;
+    background-image: url("../src/image/background-C.png");
+    justify-content: space-between;
+}
+
+@media (max-width: 530px) {
+    nav ul {
+        display: none;
+    }
+}
