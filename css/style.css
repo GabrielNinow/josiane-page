@@ -15,10 +15,13 @@
     --scrollbar: #78608f;
 
     --secondary: #2E52AF;
+
+    --card-background: #c3a1e560;
+    --card-background-secondary: #d4d4d460;
 }
 
 * {
-    font-family: 'lexend', sans-serif;
+    font-family: 'roboto', 'lexend', sans-serif;
     font-size: 20px;
     font-weight: 400;
     color: var(--black);
@@ -57,9 +60,8 @@ h2 {
     font-size: 2rem;
 }
 
-/* scrollbar */
 ::-webkit-scrollbar {
-    width: 0.5rem;
+    width: 0.4rem;
 }
 
 ::-webkit-scrollbar-track {
@@ -69,6 +71,7 @@ h2 {
 ::-webkit-scrollbar-thumb {
     background: var(--scrollbar);
     border-radius: 100px;
+    border: 0.1rem solid var(--background);
 }
 
 ::-webkit-scrollbar-thumb:hover {
