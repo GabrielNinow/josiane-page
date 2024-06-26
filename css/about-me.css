@@ -69,4 +69,10 @@
     .card-text {
         max-width: 80%;
     }
+
+    .image-card img {
+        max-width: 100%;
+        min-width: 0;
+        min-height: 0;
+    }
 }
