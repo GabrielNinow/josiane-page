@@ -3,8 +3,7 @@
 
     --white: #fff;
     --black: #202020;
-    --grey-white: #dadada;
-    --grey-black: #505050;
+    --grey: #cfcfcf;
 
     --background: #c7afdf;
     --background-010: #ac90c9;
@@ -24,6 +23,7 @@
     font-family: 'roboto', 'lexend', sans-serif;
     font-size: 20px;
     font-weight: 400;
+    box-sizing: border-box;
     color: var(--black);
 }
 
