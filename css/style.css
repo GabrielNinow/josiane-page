@@ -2,18 +2,24 @@
     --body: #faf9f9;
 
     --white: #fff;
-    --black: #202020;
+    --black: #191919;
     --grey: #cfcfcf;
+    --dark-grey: #3c3c3c;
+    --almost-white: #f0e9f3;
 
-    --background: #c7afdf;
-    --background-010: #ac90c9;
+    --background: #813CB893;
+    --background-darker: #813cb8;
+    --background-lighter: #ae7dd5;
 
-    --primary: #b18ad8;
-    --primary-010: #9f7cc2;
+    --primary: #6c28a1;
+    --primary-010: #9060B6;
 
     --scrollbar: #78608f;
 
-    --secondary: #2E52AF;
+    --secondary: #3DB86C;
+    --secondary-010: #349e5c;
+
+    --link: #007bff;
 
     --card-background: #c3a1e560;
     --card-background-secondary: #d4d4d460;
@@ -21,14 +27,14 @@
 
 * {
     font-family: 'roboto', 'lexend', sans-serif;
-    font-size: 20px;
-    font-weight: 400;
+    font-size: 18px;
+    font-weight: 500;
     box-sizing: border-box;
     color: var(--black);
 }
 
 body {
-    background-image: url("../src/image/background-A.png");
+    background: var(--almost-white);
     margin: 0;
 }
 
@@ -39,7 +45,7 @@ a {
 }
 
 a:hover {
-    color: var(--grey-black);
+    color: var(--dark-grey);
 }
 
 ul {
@@ -53,11 +59,11 @@ h2 {
 }
 
 h1 {
-    font-size: 3rem;
+    font-size: 2.5rem;
 }
 
 h2 {
-    font-size: 2rem;
+    font-size: 1.5rem;
 }
 
 ::-webkit-scrollbar {
@@ -80,12 +86,12 @@ h2 {
 
 .btn {
     padding: 10px;
-    background: var(--primary);
+    background: var(--secondary);
     border-radius: 20px;
 }
 
 .btn:hover {
-    background: var(--primary-010);
+    background: var(--secondary-010);
 }
 
 .container {

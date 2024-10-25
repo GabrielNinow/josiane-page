@@ -5,7 +5,7 @@ footer {
     align-items: center;
     justify-content: space-between;
     width: 100%;
-    background-image: url("../src/image/background-C.png");
+    background: var(--background-darker);
     margin-top: 1rem;
 }
 
