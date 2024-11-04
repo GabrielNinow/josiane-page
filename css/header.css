@@ -17,6 +17,7 @@ ul#nav-item {
 
 header {
     height: 10vh;
+    min-height: 50px;
     padding: 0 2rem;
     justify-content: space-between;
     background: var(--background-darker);
