@@ -40,7 +40,7 @@ services.forEach((service) => {
                 <h2>${service.title}</h2>
                 <p>${service.text}</p>
             </div>
-            <a class="more-button" href="${service.url}">Saiba mais <img src="src/icon/right-arrow.svg" alt="right arrow icon"></a>
+            <a class="more-button" href="${service.url}">Saiba mais...</a>
         </div>
     `;
     cardContainer.append(card);

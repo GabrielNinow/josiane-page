@@ -1,3 +1,7 @@
+body{
+    background: #fff;
+}
+
 #profile-pic {
     width: 20rem;
     height: 20rem;
@@ -113,13 +117,18 @@
 }
 
 .card a {
-    color: var(--secondary);
+    color: var(--link);
     display: flex;
     flex-direction: row;
     align-items: center;
     font-size: 1.5rem;
     padding-top: 20px;
 }
+
+.card a:hover{
+    color: var(--link-hover);
+}
+
 
 .service .card>img {
     min-width: 100%;
@@ -214,7 +223,7 @@
     align-items: center;
     background: var(--background);
     border-radius: 30px;
-    padding: 0.5rem 3rem;
+    padding: 1rem 5rem;
     font-size: 1.5rem;
     width: 6rem;
 }
@@ -265,6 +274,18 @@
     .apresentation-text {
         align-items: center;
         text-align: center;
+    }
+
+    .service{
+        max-width: 100%;
+    }
+
+    #card-list{
+        max-width: 100%;
+    }
+
+    #card-list img{
+        height: 50%;
     }
 }
 
