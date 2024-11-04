@@ -1,0 +1,140 @@
+.card {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    border-radius: 20px;
+    margin-top: 2rem;
+    background: var(--card-background);
+    width: 80%;
+    min-height: 500px;
+}
+
+.card h1 {
+    margin: 1.5rem 0;
+}
+
+.image-card {
+    display: flex;
+    flex-direction: row;
+}
+
+.card-text {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    max-width: 50%;
+}
+
+.image-card img {
+    max-width: 400px;
+    max-height: 500px;
+    border-radius: 15px;
+}
+
+.text-card {
+    align-items: center;
+    flex-direction: column;
+    background: var(--card-background-secondary);
+    padding-bottom: 2rem;
+}
+
+.card ul {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    width: 80%;
+}
+
+.card li {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.card-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.image-list {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 80%;
+}
+
+.image-list h1 {
+    margin: 0;
+}
+
+.image-list ul {
+    max-width: 50%;
+}
+
+.image-list img {
+    max-width: 500px;
+    max-height: 500px;
+    border-radius: 15px;
+}
+
+#experiences {
+    align-items: center;
+    max-width: 80%;
+    padding-bottom: 2rem;
+}
+
+@media (max-width: 1366px) {
+    .image-card {
+        flex-direction: column-reverse;
+        padding: 1rem 0;
+    }
+
+    .image-list {
+        flex-direction: column;
+        padding: 1rem 0;
+    }
+
+    #list {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    #list .image-list {
+        align-items: flex-start;
+    }
+
+    #list ul {
+        max-width: 100%;
+    }
+
+    .image-list {
+        max-width: 80%;
+    }
+
+    .image-list img {
+        max-width: 100%;
+    }
+
+    .card ul {
+        padding-left: 1rem;
+    }
+
+    .card-text {
+        max-width: 80%;
+        height: auto;
+    }
+
+    .card h1 {
+        font-size: 2.5rem;
+    }
+
+    .image-card img {
+        max-width: 90%;
+    }
+}

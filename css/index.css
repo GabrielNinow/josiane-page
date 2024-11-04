@@ -1,30 +1,66 @@
+body{
+    background: #fff;
+}
+
 #profile-pic {
-    width: 15rem;
-    height: 15rem;
+    width: 20rem;
+    height: 20rem;
     max-width: 100%;
+    border-radius: 50%;
+    box-shadow: 2px 2px 1px 1px rgb(53, 53, 53);
 }
 
 .apresentation-text {
     display: flex;
+    justify-content: center;
     flex-direction: column;
-    max-width: 700px;
+    max-width: 600px;
+}
+
+.image-card{
+    margin: 0 25px;
+    min-width: calc(100% - 50px);
+    box-sizing: border-box;
+
+}
+
+#card-list{
+    padding: 0;
+    transition: ease 1s;
 }
 
 .apresentation {
     display: flex;
     flex-direction: row;
-    align-items: center;
-    justify-content: center;
+    padding: calc(5rem);
     gap: 5rem;
-    padding: 5rem;
     width: 100%;
 }
 
-.main-content {
-    background-image: url("../src/image/background-B.png");
-    height: 90vh;
-    min-height: 600px;
+@media(max-width: 1366px){
+    .apresentation {
+        display: flex;
+        flex-direction: row;
+        padding:5rem 2rem 2rem 2rem;
+        gap: 5rem;
+        width: 100%;
+    }
 }
+
+.main-content {
+    background-image: url("../src/image/texture.png");
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    height: 80vh;
+}
+
+.main-content > .container{
+    align-items: center;
+    justify-content: center;
+}
+
+.main-content
 
 .container,
 .appointment {
@@ -37,7 +73,7 @@
 .about-me,
 .service,
 .social-media {
-    margin: 3rem 0;
+    margin: 0.5rem 0;
 }
 
 .content {
@@ -53,8 +89,8 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 80%;
-    max-width: 80%;
+    width: 100%;
+    max-width: 100%;
     min-height: 500px;
     border-radius: 50px;
     background: var(--background);
@@ -62,18 +98,26 @@
 }
 
 .card-text {
-    width: 80%;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    justify-content: center;
 }
 
 .text-card {
     justify-content: center;
+    align-items: center;
+    width: 80%;
+}
+
+.card-text-content{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
 }
 
 .card a {
-    color: var(--secondary);
+    color: var(--link);
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -81,11 +125,45 @@
     padding-top: 20px;
 }
 
+.card a:hover{
+    color: var(--link-hover);
+}
+
+
 .service .card>img {
     min-width: 100%;
     max-width: 100%;
     max-height: 300px;
     border-radius: 50px;
+}
+
+.prev, .next{
+    transform: translateY(-50%);
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    position: absolute;
+    top: 225%;
+}
+
+.prev {
+    left: 50px;
+    visibility: hidden;
+}
+
+.next {
+    right: 50px;
+    visibility: hidden;
+}
+
+.service{
+    width: calc(80% + 50px);
+    overflow: hidden;
+}
+
+.service > ul{
+    justify-content: flex-start;
 }
 
 .more-button img {
@@ -145,7 +223,7 @@
     align-items: center;
     background: var(--background);
     border-radius: 30px;
-    padding: 0.5rem 3rem;
+    padding: 1rem 5rem;
     font-size: 1.5rem;
     width: 6rem;
 }
@@ -184,6 +262,7 @@
 
     .apresentation {
         flex-direction: column-reverse;
+        align-items: center;
         padding: 2rem 0;
         gap: 1rem;
     }
@@ -195,6 +274,18 @@
     .apresentation-text {
         align-items: center;
         text-align: center;
+    }
+
+    .service{
+        max-width: 100%;
+    }
+
+    #card-list{
+        max-width: 100%;
+    }
+
+    #card-list img{
+        height: 50%;
     }
 }
 

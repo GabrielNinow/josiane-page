@@ -60,13 +60,26 @@
     padding-bottom: 2rem;
 }
 
-@media (max-width: 1336px) {
+@media (max-width: 1366px) {
     #about-me {
         flex-direction: column-reverse;
         padding: 1rem 0;
     }
 
+    .card ul {
+        padding-left: 1rem;
+    }
+
     .card-text {
         max-width: 80%;
+        height: auto;
+    }
+
+    .card-text h1 {
+        font-size: 2.5rem;
+    }
+
+    .image-card img {
+        max-width: 90%;
     }
 }
