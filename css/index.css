@@ -14,17 +14,21 @@
 }
 
 .image-card{
-    min-width: 100%;
+    margin: 0 25px;
+    min-width: calc(100% - 50px);
+    box-sizing: border-box;
+
 }
 
 #card-list{
     padding: 0;
+    transition: ease 1s;
 }
 
 .apresentation {
     display: flex;
     flex-direction: row;
-    padding: calc(5rem );
+    padding: calc(5rem);
     gap: 5rem;
     width: 100%;
 }
@@ -145,7 +149,7 @@
 }
 
 .service{
-    width: 80%;
+    width: calc(80% + 50px);
     overflow: hidden;
 }
 
