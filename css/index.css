@@ -1,4 +1,4 @@
-body{
+body {
     background: #fff;
 }
 
@@ -17,14 +17,19 @@ body{
     max-width: 600px;
 }
 
-.image-card{
+.image-card {
     margin: 0 25px;
     min-width: calc(100% - 50px);
     box-sizing: border-box;
 
 }
 
-#card-list{
+.content h1,
+.social-media h1 {
+    margin: 1rem 0;
+}
+
+#card-list {
     padding: 0;
     transition: ease 1s;
 }
@@ -37,11 +42,11 @@ body{
     width: 100%;
 }
 
-@media(max-width: 1366px){
+@media(max-width: 1366px) {
     .apresentation {
         display: flex;
         flex-direction: row;
-        padding:5rem 2rem 2rem 2rem;
+        padding: 5rem 2rem 2rem 2rem;
         gap: 5rem;
         width: 100%;
     }
@@ -55,29 +60,22 @@ body{
     height: 80vh;
 }
 
-.main-content > .container{
+.main-content>.container {
     align-items: center;
     justify-content: center;
 }
 
-.main-content
-
-.container,
+.main-content .container,
 .appointment {
     display: flex;
     flex-direction: row;
     justify-content: center;
 }
 
-.container .content,
-.about-me,
-.service,
-.social-media {
-    margin: 0.5rem 0;
-}
 
 .content {
     width: 100%;
+    margin-bottom: 2rem;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -109,7 +107,7 @@ body{
     width: 80%;
 }
 
-.card-text-content{
+.card-text-content {
     width: 80%;
     display: flex;
     flex-direction: column;
@@ -125,7 +123,7 @@ body{
     padding-top: 20px;
 }
 
-.card a:hover{
+.card a:hover {
     color: var(--link-hover);
 }
 
@@ -137,32 +135,39 @@ body{
     border-radius: 50px;
 }
 
-.prev, .next{
+.prev,
+.next {
+    position: absolute;
+    top: 65%;
     transform: translateY(-50%);
     background: transparent;
     border: none;
     cursor: pointer;
+    z-index: 10;
     padding: 10px;
-    position: absolute;
-    top: 225%;
 }
 
 .prev {
-    left: 50px;
+    left: -24px;
     visibility: hidden;
 }
 
 .next {
-    right: 50px;
+    right: -24px;
     visibility: hidden;
 }
 
-.service{
+.service {
+    position: relative;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: calc(80% + 50px);
     overflow: hidden;
 }
 
-.service > ul{
+.service>ul {
     justify-content: flex-start;
 }
 
@@ -170,9 +175,7 @@ body{
     margin: 0 10px;
 }
 
-.content h1 {
-    margin: 20px 0;
-}
+
 
 .card h2 {
     padding-top: 20px;
@@ -190,9 +193,10 @@ body{
 }
 
 .appointment span {
-    font-family: 'kolker brush';
+    font-family: 'imperial script';
+    font-weight: bolder;
     color: var(--grey-black);
-    font-size: 4rem;
+    font-size: 3.5rem;
 }
 
 .socials {
@@ -207,6 +211,7 @@ body{
     flex-direction: column;
     align-items: center;
     width: 60%;
+    margin-bottom: 5rem;
 }
 
 .social-group {
@@ -276,15 +281,15 @@ body{
         text-align: center;
     }
 
-    .service{
+    .service {
         max-width: 100%;
     }
 
-    #card-list{
+    #card-list {
         max-width: 100%;
     }
 
-    #card-list img{
+    #card-list img {
         height: 50%;
     }
 }

@@ -12,7 +12,7 @@ footer {
 footer .right-content {
     display: flex;
     flex-direction: row;
-    gap: 1rem;
+    gap: 3rem;
 }
 
 .footer-links ul {

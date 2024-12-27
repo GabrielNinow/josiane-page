@@ -1,6 +1,6 @@
 #logo {
-    width: 3rem;
-    height: 3rem;
+    width: 3.5rem;
+    height: 3.5rem;
 }
 
 header,
@@ -15,28 +15,42 @@ ul#nav-item {
     gap: 1rem;
 }
 
+header a,
+header span {
+    font-size: 1.2rem;
+}
+
+
+@media(max-width: 650px) {
+
+    header a,
+    header span {
+        font-size: 1rem;
+    }
+}
+
 header {
     height: 10vh;
-    min-height: 50px;
+    min-height: 75px;
     padding: 0 2rem;
     justify-content: space-between;
     background: var(--background-darker);
 }
 
-header nav{
+header nav {
     width: 100%;
     display: flex;
     justify-content: space-between;
     margin: 1rem;
 }
 
-.informations{
+.informations {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.informations span{
+.informations span {
     color: var(--black);
 }
 

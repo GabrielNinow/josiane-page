@@ -1,34 +1,28 @@
 const services = [
     {
-        "title": "Psicoterapia online",
-        "img": "src/image/Placeholder.png",
-        "text": "A psicoterapia é um processo voltado para promoção de saúde mental, autoconhecimento e tratamento de Transtornos Mentais. Existem diversas abordagens de psicoterapia. Eu atendo através das abordagens: Terapia Cognitivo Comportamental, Terapia Comportamental Dialética e Terapia do Esquema.",
-        "url": "Psychotherapy.com"
+        "title": "Tratamento para Transtornos: Disfunções e Queixas Sexuais",
+        "img": "src/image/TCS.png",
+        "text": "tratamento de transtornos, disfunções e queixas relacionadas à sexualidade. Focado em compreender e atender as necessidades físicas, emocionais e psicológicas com o uso da terapia, técnicas de intervenção e suporte multidisciplinar para promover uma vida sexual saudável e satisfatória.",
+        "url": "Psychotherapy.html"
     },
     {
-        "title": "Psicoterapia online2",
-        "img": "src/image/Placeholder.png",
-        "text": "A psicoterapia é um processo voltado para promoção de saúde mental, autoconhecimento e tratamento de Transtornos Mentais. Existem diversas abordagens de psicoterapia. Eu atendo através das abordagens: Terapia Cognitivo Comportamental, Terapia Comportamental Dialética e Terapia do Esquema.",
-        "url": "Psychotherapy.com"
+        "title": "Tratamento para Transtorno de Estresse Pós-Traumático",
+        "img": "src/image/TEPT.png",
+        "text": "O Transtorno de Estresse Pós-Traumático (TEPT) é uma condição psicológica que surge como resposta a eventos traumáticos intensos, como acidentes, violência, desastres naturais ou situações de guerra. Caracterizado por sintomas como revivência do trauma, evasão de situações relacionadas, alterações no humor e hiperalerta, o TEPT pode afetar significativamente a qualidade de vida e as relações interpessoais.",
+        "url": "Psychotherapy.html"
     },
     {
         "title": "Psicoterapia online3",
         "img": "src/image/Placeholder.png",
         "text": "A psicoterapia é um processo voltado para promoção de saúde mental, autoconhecimento e tratamento de Transtornos Mentais. Existem diversas abordagens de psicoterapia. Eu atendo através das abordagens: Terapia Cognitivo Comportamental, Terapia Comportamental Dialética e Terapia do Esquema.",
-        "url": "Psychotherapy.com"
+        "url": "Psychotherapy.html"
     }
 ];
 
 const cardContainer = document.querySelector('#card-list');
-const nextButton = document.createElement('button');
-const prevButton = document.createElement('button');
+const nextButton = document.querySelector('.next');
+const prevButton = document.querySelector('.prev');
 
-nextButton.classList.add('next');
-nextButton.innerHTML = `<img src="src/icon/right-arrow.svg" alt="right button icon">`;
-prevButton.classList.add('prev');
-prevButton.innerHTML = `<img src="src/icon/left-arrow.svg" alt="left button icon">`;
-
-document.querySelector('#services').append(prevButton, nextButton);
 
 services.forEach((service) => {
     const card = document.createElement('li');
