@@ -21,18 +21,26 @@
     </head>
 
     <body>
-        <header>
-            <nav>
+        <header role="banner">
+        <nav>
+            <a href="index.html">
                 <img id="logo" src="src/icon/icon.svg" alt="josiane becker logo">
-                <ul id="nav-item">
-                    <li><a href="/">Inicio</a></li>
-                    <li><a href="about-me.html">Sobre mim</a></li>
-                    <li><a href="#">Blog</a></li>
-                </ul>
-            </nav>
-
-            <img id="search" src="src/icon/search.svg" alt="search logo icon">
-        </header>
+            </a>
+            <ul id="nav-item">
+                <li><a href="#">Blog</a></li>
+                <li><a href="#about-me">Sobre Mim</a></li>
+                <li><a href="#services-header">Serviços</a></li>
+            </ul>
+            <div class="informations">
+                <span>
+                    Josiane da Silva Becker
+                </span>
+                <span>
+                    CRE 58342498734923
+                </span>
+            </div>
+        </nav>
+    </header>
 
         <div class="about-me">
             <div class="container">
@@ -120,16 +128,15 @@
         </div>
 
         <div class="container">
-            <footer>
+        <footer role="contentinfo">
+            <div class="footer-content">
                 <div class="right-content">
                     <img src="src/icon/icon.svg" alt="josiane icon">
                     <nav class="footer-links">
                         <ul>
-                            <li><a href="#">Home</a></li>
-                            <li><a href="#">About</a></li>
-                            <li><a href="#">Service</a></li>
-                            <li><a href="#">Cases</a></li>
                             <li><a href="#">Blog</a></li>
+                            <li><a href="#">Sobre mim</a></li>
+                            <li><a href="#">Serviços</a></li>
                         </ul>
                     </nav>
                 </div>
@@ -137,16 +144,35 @@
                 <div class="social-links">
                     <span>Follow me</span>
                     <ul>
-                        <li><a href="#"><img src="src/icon/doctoralia.svg" alt="doctoralia icon"></a></li>
-                        <li><a href="#"><img src="src/icon/linkedin.svg" alt="linkedin icon"></a></li>
-                        <li><a href="#"><img src="src/icon/whatsapp.svg" alt="whatsapp icon"></a></li>
-                        <li><a href="#"><img src="src/icon/youtube.svg" alt="youtube icon"></a></li>
-                        <li><a href="#"><img src="src//icon/instagram.svg" alt="instagram icon"></a></li>
-                        <li><a href="#"><img src="src//icon/facebook.svg" alt="facebook icon"></a></li>
+                        <li>
+                            <a href="https://www.doctoralia.com.br/josiane-da-silva-becker/psicologo/blumenau" target="_blank" aria-label="Doctoralia"><img
+                                    src="src/icon/doctoralia.svg" loading="lazy" alt="doctoralia icon"></a>
+                        </li>
+                        <li>
+                            <a href="https://api.whatsapp.com/send?phone=555181916642" target="_blank" aria-label="WhatsApp"><img
+                                    src="src/icon/whatsapp.svg" loading="lazy" alt="whatsapp icon"></a>
+                        </li>
+                        <li>
+                            <a href="https://www.youtube.com/channel/UC-Fn7ubg88lpcOrtLNSdhDA" target="_blank" aria-label="YouTube"><img
+                                    src="src/icon/youtube.svg" loading="lazy" alt="youtube icon"></a>
+                        </li>
+                        <li>
+                            <a href="https://www.instagram.com/josianebecker.psi/" target="_blank" aria-label="Instagram"><img
+                                    src="src/icon/instagram.svg" loading="lazy" alt="instagram icon"></a>
+                        </li>
+                        <li>
+                            <a href="https://www.facebook.com/psicojosianebecker" target="_blank" aria-label="Facebook"><img
+                                    src="src/icon/facebook.svg" loading="lazy" alt="facebook icon"></a>
+                        </li>
+                        <li>
+                            <a a href="https://www.linkedin.com/in/psicologajosianesbecker/" target="_blank" aria-label="LinkedIn"><img
+                                    src="src/icon/linkedin.svg" loading="lazy" alt="linkedin icon"></a>
+                        </li>
                     </ul>
                 </div>
-            </footer>
-        </div>
+            </div>
+        </footer>
+    </div>
     </body>
 
 </html>

@@ -17,6 +17,13 @@ body {
     max-width: 600px;
 }
 
+.apresentation-card{
+    border-radius: 50px;
+    background-color: var(--background);
+    max-width: 90%;
+    height: 80%;
+}
+
 .image-card {
     margin: 0 25px;
     min-width: calc(100% - 50px);
@@ -26,7 +33,7 @@ body {
 
 .content h1,
 .social-media h1 {
-    margin: 1rem 0;
+    margin: 1.5rem 0;
 }
 
 #card-list {
@@ -54,6 +61,7 @@ body {
 
 .main-content {
     background-image: url("../src/image/texture.png");
+    background-size: cover;
     align-items: center;
     justify-content: center;
     display: flex;
@@ -82,13 +90,13 @@ body {
     justify-content: center;
 }
 
-.card {
+ .card {
     box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 100%;
-    max-width: 100%;
+    max-width: 1250px;
     min-height: 500px;
     border-radius: 50px;
     background: var(--background);
@@ -108,10 +116,11 @@ body {
 }
 
 .card-text-content {
-    width: 80%;
+    width: 90%;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    justify-content: center;
 }
 
 .card a {
@@ -164,6 +173,7 @@ body {
     align-items: center;
     justify-content: center;
     width: calc(80% + 50px);
+    max-width: 1300px;
     overflow: hidden;
 }
 
@@ -175,8 +185,6 @@ body {
     margin: 0 10px;
 }
 
-
-
 .card h2 {
     padding-top: 20px;
 }
@@ -184,6 +192,7 @@ body {
 .appointment {
     align-items: center;
     justify-content: space-between;
+    margin-top: 4rem;
 }
 
 .appointment a {
@@ -200,37 +209,33 @@ body {
 }
 
 .socials {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 0;
 }
 
 .social-media {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 60%;
-    margin-bottom: 5rem;
+    width: 65%;
+    margin-bottom: 10rem;
 }
 
 .social-group {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-    width: 100%;
     margin-bottom: 2rem;
 }
 
 .social-card {
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
     background: var(--background);
     border-radius: 30px;
-    padding: 1rem 5rem;
+    padding: 1rem;
     font-size: 1.5rem;
-    width: 6rem;
 }
 
 .social-card img {
@@ -238,32 +243,16 @@ body {
     height: 7rem;
 }
 
-@media (max-width: 900px) {
+@media (max-width: 1050px) {
     .appointment {
         flex-direction: column-reverse;
         padding: 0;
         gap: 1rem;
     }
 
-    .socials {
-        flex-direction: row;
-    }
-
-    .social-media {
-        width: 80%;
-    }
-
-    .social-group {
-        flex-direction: column;
-    }
-
-    .social-card {
-        width: 50%;
-        margin-bottom: 1rem;
-    }
 }
 
-@media (max-width: 760px) {
+@media (max-width: 900px) {
 
     .apresentation {
         flex-direction: column-reverse;
@@ -278,12 +267,8 @@ body {
 
     .apresentation-text {
         align-items: center;
-        text-align: center;
     }
 
-    .service {
-        max-width: 100%;
-    }
 
     #card-list {
         max-width: 100%;
@@ -294,8 +279,24 @@ body {
     }
 }
 
+@media (max-width: 768px) {
+    .socials {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 480px) {
+    .socials {
+        grid-template-columns: 1fr;
+    }
+}
+
 @media (max-width: 530px) {
-    .social-card {
-        width: 6rem;
+    .card a{
+        padding-top: 0;
+    }
+
+    .card-text {
+        padding-top: 10px;
     }
 }
