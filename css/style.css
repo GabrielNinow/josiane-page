@@ -199,6 +199,20 @@ main section + section {
     * {
         font-size: 16px;
     }
+
+    :root {
+        --section-width: min(1000px, calc(100% - 2rem));
+    }
+}
+
+@media (max-width: 900px) {
+    * {
+        font-size: 15px;
+    }
+
+    :root {
+        --section-width: min(100% - 1.5rem, calc(100% - 1.5rem));
+    }
 }
 
 @media (max-width: 530px) {
@@ -208,5 +222,11 @@ main section + section {
 
     * {
         font-size: 14px;
+    }
+
+    body {
+        background:
+            radial-gradient(circle at top left, rgba(143, 89, 179, 0.12), transparent 25%),
+            linear-gradient(180deg, #f4ecf8 0%, #eee0f4 35%, #ead8f1 100%);
     }
 }

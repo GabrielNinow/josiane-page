@@ -80,23 +80,46 @@ footer .right-content {
     background: rgba(248, 241, 252, 0.16);
 }
 
+@media (max-width: 900px) {
+    footer {
+        padding: 1.25rem 1.5rem;
+    }
+
+    .footer-content {
+        gap: 1.5rem;
+    }
+}
+
 @media (max-width: 700px) {
+    footer {
+        padding: 1rem 1.25rem;
+    }
+
     .footer-content {
         flex-direction: column;
+        gap: 1rem;
+    }
+
+    .footer-links ul {
+        gap: 0.5rem;
     }
 }
 
 @media (max-width: 530px) {
-    footer .right-content {
-        gap: 0.75rem;
-    }
-
     footer {
         padding: 1rem;
     }
 
+    .footer-content {
+        gap: 0.75rem;
+    }
+
     .footer-links {
         display: none;
+    }
+
+    .right-content {
+        gap: 0.75rem;
     }
 
     .right-content img {
@@ -108,5 +131,10 @@ footer .right-content {
         justify-content: center;
         max-width: 220px;
         margin: 5px;
+        gap: 0.5rem;
+    }
+
+    .social-links a {
+        padding: 0.5rem;
     }
 }
