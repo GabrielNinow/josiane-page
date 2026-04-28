@@ -1,143 +1,163 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Sobre mim</title>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Informações sobre psicoterapia, especialidades e forma de trabalho de Josiane Becker.">
+    <title>Psicoterapia | Josiane Becker</title>
 
-        <link rel="stylesheet" href="css/style.css">
-        <link rel="stylesheet" href="css/header.css">
-        <link rel="stylesheet" href="css/footer.css">
-        <link rel="stylesheet" href="css/psychotherapy.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/psychotherapy.css">
 
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link
-            href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
-            rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css2?family=Kolker+Brush&display=swap" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
-    </head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Kolker+Brush&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
+</head>
 
-    <body>
-        <header>
-            <nav>
-                <a href="index.html">
-                    <img id="logo" src="src/icon/icon.svg" alt="josiane becker logo">
-                </a>
-                <div class="informations">
-                    <span>
-                        Josiane da Silva Becker
-                    </span>
-                    <span>
-                        CRE 58342498734923
-                    </span>
-                </div>
-            </nav>
-        </header>
-
-        <div class="about-me">
-            <div class="container">
-                <div class="card image-card">
-                    <div class="card-text">
-                        <h1>Para quem é psicoterapia?</h1>
-                        <div>
-                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corporis cumque alias omnis
-                                perferendis doloribus illum, magni deserunt quisquam dignissimos? Eveniet laborum,
-                                excepturi
-                            </p>
-                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corporis cumque alias omnis
-                                perferendis doloribus illum, magni deserunt quisquam dignissimos? Eveniet laborum,
-                                excepturi
-                            </p>
-                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corporis cumque alias omnis
-                                perferendis doloribus illum, magni deserunt quisquam dignissimos? Eveniet laborum,
-                                excepturi
-                            </p>
-                        </div>
-                    </div>
-                    <img src="src/image/psychotherapy.png" alt="">
-                </div>
+<body>
+    <header role="banner">
+        <nav aria-label="Navegação principal">
+            <a href="index.html" aria-label="Página inicial">
+                <img id="logo" src="src/icon/icon.svg" alt="Logo Josiane Becker">
+            </a>
+            <ul id="nav-item">
+                <li><a href="index.html">Início</a></li>
+                <li><a href="about-me.html">Sobre mim</a></li>
+                <li class="nav-dropdown">
+                    <button class="nav-dropdown-trigger" type="button" aria-expanded="false" aria-controls="services-menu">
+                        <span>Serviços</span>
+                        <span class="nav-dropdown-arrow" aria-hidden="true"></span>
+                    </button>
+                    <ul id="services-menu" class="nav-dropdown-menu" aria-label="Lista de serviços"></ul>
+                </li>
+                <li><a href="index.html#social-media">Redes sociais</a></li>
+            </ul>
+            <div class="informations">
+                <span>Josiane da Silva Becker</span>
+                <span>Psicóloga clínica e perita</span>
             </div>
-            <div class="container">
-                <div id="list" class="card text-card">
-                    <div class="card-list">
-                        <div class="image-list">
-                            <img src="src/image/specialties.png" alt="">
+        </nav>
+    </header>
+
+    <main class="psychotherapy-page">
+        <section class="container" aria-labelledby="psychotherapy-title">
+            <div class="card image-card">
+                <div class="card-text">
+                    <h1 id="psychotherapy-title">Para quem é a psicoterapia?</h1>
+                    <div>
+                        <p>
+                            A psicoterapia é indicada para pessoas que desejam compreender melhor suas emoções, relações, comportamentos e formas de lidar com sofrimento, conflitos ou momentos de crise.
+                        </p>
+                        <p>
+                            O processo terapêutico pode ajudar em quadros de ansiedade, trauma, dificuldades afetivas, sofrimento relacionado à sexualidade, transtornos de personalidade e outras demandas que impactam a qualidade de vida.
+                        </p>
+                        <p>
+                            Também é um espaço importante para quem busca autoconhecimento, fortalecimento emocional e desenvolvimento de recursos para enfrentar situações desafiadoras com mais clareza.
+                        </p>
+                    </div>
+                </div>
+                <img src="src/image/TCS.png" alt="Ilustração sobre psicoterapia">
+            </div>
+        </section>
+
+        <section class="container" aria-labelledby="specialties-title">
+            <div id="list" class="card text-card">
+                <div class="card-list">
+                    <div class="image-list">
+                        <img src="src/image/TEPT.png" alt="Ilustração das especialidades atendidas">
+                        <div class="specialties-content">
+                            <h1 id="specialties-title">Quais são minhas especialidades?</h1>
                             <ul>
-                                <h1>Quais são minhas especialidades?</h1>
-                                <li><img src="src/icon/correct.svg" alt="correct icon">Desregulação emocional</li>
-                                <li><img src="src/icon/correct.svg" alt="correct icon">Transtorno de Personalidade
-                                    Borderline</li>
-                                <li><img src="src/icon/correct.svg" alt="correct icon">Transtorno de Personalidade
-                                    Narcisista</li>
-                                <li><img src="src/icon/correct.svg" alt="correct icon">Ansiedade</li>
-                                <li><img src="src/icon/correct.svg" alt="correct icon">Traumas e Estresse Pos-Traumático
-                                </li>
-                                <li><img src="src/icon/correct.svg" alt="correct icon">Transtono
-                                    Obsessivo-compulsivo(TOC)</li>
-                                <li><img src="src/icon/correct.svg" alt="correct icon">Casos de Violência</li>
-                                <li><img src="src/icon/correct.svg" alt="correct icon">Distúrbios relacionados à
-                                    sexualidade</li>
+                                <li><img src="src/icon/correct.svg" alt="">Desregulação emocional</li>
+                                <li><img src="src/icon/correct.svg" alt="">Transtorno de personalidade borderline</li>
+                                <li><img src="src/icon/correct.svg" alt="">Transtorno de personalidade narcisista</li>
+                                <li><img src="src/icon/correct.svg" alt="">Ansiedade</li>
+                                <li><img src="src/icon/correct.svg" alt="">Traumas e transtorno de estresse pós-traumático</li>
+                                <li><img src="src/icon/correct.svg" alt="">Transtorno obsessivo-compulsivo</li>
+                                <li><img src="src/icon/correct.svg" alt="">Casos de violência</li>
+                                <li><img src="src/icon/correct.svg" alt="">Demandas relacionadas à sexualidade</li>
                             </ul>
                         </div>
                     </div>
                 </div>
             </div>
+        </section>
 
-            <div class="container">
-                <div class="card image-card">
-                    <div class="card-text">
-                        <h1>Como eu trabalho?</h1>
-                        <div>
-                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corporis cumque alias omnis
-                                perferendis doloribus illum, magni deserunt quisquam dignissimos? Eveniet laborum,
-                                excepturi
-                            </p>
-                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corporis cumque alias omnis
-                                perferendis doloribus illum, magni deserunt quisquam dignissimos? Eveniet laborum,
-                                excepturi
-                            </p>
-                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corporis cumque alias omnis
-                                perferendis doloribus illum, magni deserunt quisquam dignissimos? Eveniet laborum,
-                                excepturi
-                            </p>
-                        </div>
+        <section class="container" aria-labelledby="work-title">
+            <div class="card image-card">
+                <div class="card-text">
+                    <h1 id="work-title">Como eu trabalho?</h1>
+                    <div>
+                        <p>
+                            Meu trabalho clínico é construído a partir de uma avaliação cuidadosa da demanda, definição de objetivos terapêuticos e escolha de estratégias coerentes com a necessidade de cada pessoa.
+                        </p>
+                        <p>
+                            Atendo com base em abordagens como Terapia Cognitivo-Comportamental, Terapia Comportamental Dialética e Terapia do Esquema, integrando técnica e acolhimento de forma responsável.
+                        </p>
+                        <p>
+                            O foco é promover compreensão, regulação emocional e mudança prática, respeitando o tempo do processo e a singularidade de cada história.
+                        </p>
                     </div>
-                    <img src="src/image/my-work.png" alt="">
                 </div>
+                <img src="src/image/about-me.png" alt="Foto da psicóloga Josiane Becker">
             </div>
-        </div>
+        </section>
+    </main>
 
-        <div class="container">
-            <footer>
+    <div class="container">
+        <footer role="contentinfo">
+            <div class="footer-content">
                 <div class="right-content">
-                    <img src="src/icon/icon.svg" alt="josiane icon">
-                    <nav class="footer-links">
+                    <img src="src/icon/icon.svg" alt="Ícone Josiane Becker">
+                    <nav class="footer-links" aria-label="Navegação do rodapé">
                         <ul>
-                            <li><a href="#">Home</a></li>
-                            <li><a href="#">About</a></li>
-                            <li><a href="#">Service</a></li>
-                            <li><a href="#">Cases</a></li>
-                            <li><a href="#">Blog</a></li>
+                            <li><a href="index.html">Início</a></li>
+                            <li><a href="about-me.html">Sobre mim</a></li>
+                            <li><a href="index.html#services-header">Serviços</a></li>
                         </ul>
                     </nav>
                 </div>
 
                 <div class="social-links">
-                    <span>Follow me</span>
+                    <span>Redes</span>
                     <ul>
-                        <li><a href="#"><img src="src/icon/doctoralia.svg" alt="doctoralia icon"></a></li>
-                        <li><a href="#"><img src="src/icon/linkedin.svg" alt="linkedin icon"></a></li>
-                        <li><a href="#"><img src="src/icon/whatsapp.svg" alt="whatsapp icon"></a></li>
-                        <li><a href="#"><img src="src/icon/youtube.svg" alt="youtube icon"></a></li>
-                        <li><a href="#"><img src="src//icon/instagram.svg" alt="instagram icon"></a></li>
-                        <li><a href="#"><img src="src//icon/facebook.svg" alt="facebook icon"></a></li>
+                        <li>
+                            <a href="https://www.doctoralia.com.br/josiane-da-silva-becker/psicologo/blumenau" target="_blank" rel="noopener noreferrer" aria-label="Doctoralia"><img
+                                    src="src/icon/doctoralia.svg" loading="lazy" alt="Doctoralia"></a>
+                        </li>
+                        <li>
+                            <a href="https://api.whatsapp.com/send?phone=555181916642" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp"><img
+                                    src="src/icon/whatsapp.svg" loading="lazy" alt="WhatsApp"></a>
+                        </li>
+                        <li>
+                            <a href="https://www.youtube.com/channel/UC-Fn7ubg88lpcOrtLNSdhDA" target="_blank" rel="noopener noreferrer" aria-label="YouTube"><img
+                                    src="src/icon/youtube.svg" loading="lazy" alt="YouTube"></a>
+                        </li>
+                        <li>
+                            <a href="https://www.instagram.com/josianebecker.psi/" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><img
+                                    src="src/icon/instagram.svg" loading="lazy" alt="Instagram"></a>
+                        </li>
+                        <li>
+                            <a href="https://www.facebook.com/psicojosianebecker" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><img
+                                    src="src/icon/facebook.svg" loading="lazy" alt="Facebook"></a>
+                        </li>
+                        <li>
+                            <a href="https://www.linkedin.com/in/psicologajosianesbecker/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><img
+                                    src="src/icon/linkedin.svg" loading="lazy" alt="LinkedIn"></a>
+                        </li>
                     </ul>
                 </div>
-            </footer>
-        </div>
-    </body>
+            </div>
+        </footer>
+    </div>
+    <script src="script/index.js"></script>
+</body>
 
 </html>

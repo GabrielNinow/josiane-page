@@ -1,178 +1,171 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Sobre mim</title>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Conheça a trajetória profissional e a formação de Josiane Becker.">
+    <title>Sobre mim | Josiane Becker</title>
 
-        <link rel="stylesheet" href="css/style.css">
-        <link rel="stylesheet" href="css/header.css">
-        <link rel="stylesheet" href="css/footer.css">
-        <link rel="stylesheet" href="css/about-me.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/about-me.css">
 
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link
-            href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
-            rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css2?family=Kolker+Brush&display=swap" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
-    </head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Kolker+Brush&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
+</head>
 
-    <body>
-        <header role="banner">
-        <nav>
-            <a href="index.html">
-                <img id="logo" src="src/icon/icon.svg" alt="josiane becker logo">
+<body>
+    <header role="banner">
+        <nav aria-label="Navegação principal">
+            <a href="index.html" aria-label="Página inicial">
+                <img id="logo" src="src/icon/icon.svg" alt="Logo Josiane Becker">
             </a>
             <ul id="nav-item">
-                <li><a href="#">Blog</a></li>
-                <li><a href="#about-me">Sobre Mim</a></li>
-                <li><a href="#services-header">Serviços</a></li>
+                <li><a href="index.html">Início</a></li>
+                <li><a href="about-me.html">Sobre mim</a></li>
+                <li class="nav-dropdown">
+                    <button class="nav-dropdown-trigger" type="button" aria-expanded="false" aria-controls="services-menu">
+                        <span>Serviços</span>
+                        <span class="nav-dropdown-arrow" aria-hidden="true"></span>
+                    </button>
+                    <ul id="services-menu" class="nav-dropdown-menu" aria-label="Lista de serviços"></ul>
+                </li>
+                <li><a href="index.html#social-media">Redes sociais</a></li>
             </ul>
             <div class="informations">
-                <span>
-                    Josiane da Silva Becker
-                </span>
-                <span>
-                    CRE 58342498734923
-                </span>
+                <span>Josiane da Silva Becker</span>
+                <span>Psicóloga clínica e perita</span>
             </div>
         </nav>
     </header>
 
-        <div class="about-me">
-            <div class="container">
-                <div id="about-me" class="card image-card">
-                    <div class="card-text">
-                        <h1>Quem sou eu?</h1>
-                        <div>
-                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corporis cumque alias omnis
-                                perferendis doloribus illum, magni deserunt quisquam dignissimos? Eveniet laborum,
-                                excepturi
-                            </p>
-                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corporis cumque alias omnis
-                                perferendis doloribus illum, magni deserunt quisquam dignissimos? Eveniet laborum,
-                                excepturi
-                            </p>
-                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corporis cumque alias omnis
-                                perferendis doloribus illum, magni deserunt quisquam dignissimos? Eveniet laborum,
-                                excepturi
-                            </p>
-                        </div>
+    <main class="about-me-page">
+        <section class="container" aria-labelledby="about-page-title">
+            <div id="about-me" class="card image-card">
+                <div class="card-text">
+                    <h1 id="about-page-title">Quem sou eu?</h1>
+                    <div>
+                        <p>
+                            Sou psicóloga clínica e meu trabalho é oferecer um espaço ético, acolhedor e tecnicamente qualificado para adultos que desejam compreender melhor sua história, seus padrões emocionais e suas formas de se relacionar.
+                        </p>
+                        <p>
+                            Ao longo da minha trajetória, busquei formação complementar em psicologia forense, avaliação psicológica e abordagens terapêuticas baseadas em evidências, o que amplia meu olhar clínico e fortalece meu processo de trabalho.
+                        </p>
+                        <p>
+                            Minha prática é guiada por escuta atenta, responsabilidade profissional e atualização constante, para que cada atendimento seja conduzido com sensibilidade, clareza e estratégia terapêutica.
+                        </p>
                     </div>
-                    <img src="src/image/about-me.png" alt="">
+                </div>
+                <img src="src/image/about-me.png" alt="Foto da psicóloga Josiane Becker">
+            </div>
+        </section>
+
+        <section class="container" aria-labelledby="education-title">
+            <div class="card text-card">
+                <div class="card-list">
+                    <h1 id="education-title">Formação e aperfeiçoamento</h1>
+                    <ul>
+                        <li>Graduação em Psicologia - PUCRS, 2019</li>
+                        <li>Pós-graduação em Psicologia Forense - IMED, 2020</li>
+                        <li>Pós-graduação em Avaliação Psicológica - Núcleo</li>
+                        <li>Pós-graduação em Terapia Cognitivo-Comportamental - PUCRS, 2022</li>
+                        <li>Curso de Perícia Judicial no Âmbito da Psicologia - Lemes & Maciel, 2014</li>
+                        <li>Mini curso sobre traços callous-unemotional e problemas de conduta, 2017</li>
+                        <li>Mini curso sobre intervenções de proteção com crianças vítimas de abuso sexual no Judiciário, 2017</li>
+                        <li>Psicopatologia Forense - Hélix Cursos, 2017</li>
+                        <li>Formação em Psicologia Forense - Sociedade Brasileira de Psicologia Jurídica, 2017</li>
+                        <li>Curso Teste Pirâmides de Pfister - Expertise Psicologia, 2019</li>
+                        <li>Curso Teste R-PAS - Andréia Schneider Psicologia, 2019</li>
+                        <li>Curso sobre violência, vítimas e agressores - Expertise Psicologia, 2020</li>
+                        <li>Curso sobre tratamento de vítimas de trauma - Síntesis Psicologia, 2020</li>
+                        <li>Treinamento de habilidades em Terapia Comportamental Dialética - Wainer Psicologia, 2020</li>
+                        <li>Formação em Terapia do Esquema - INTCC Porto Alegre, 2020</li>
+                        <li>Treinamento de habilidades em DBT para profissionais - Síntesis Psi, 2021</li>
+                        <li>Mini curso de Psicologia Investigativa - I Congresso Internacional de Psicologia Forense, 2022</li>
+                        <li>Formação em Terapia Comportamental Dialética - Síntesis Psicologia e Ensino, em andamento</li>
+                        <li>Formação em Terapia Cognitiva Sexual - Aline Sardinha, em andamento</li>
+                    </ul>
                 </div>
             </div>
-            <div class="container">
-                <div class="card text-card">
-                    <div class="card-list">
-                        <h1>Formações</h1>
+        </section>
+
+        <section class="container" aria-labelledby="experience-title">
+            <div class="card image-card experience-card">
+                <div id="experiences" class="card-text">
+                    <h1 id="experience-title">Experiências profissionais</h1>
+                    <div>
                         <ul>
-                            <li>Graduação em Psicologia-PUCRS,2019</li>
-                            <li>Pós-Graduação em Psicologia Forense-IMED,2020</li>
-                            <li>Pós Graduação em Avaliação Psicológica-Núcleo</li>
-                            <li>Médico Psicológico, 2021</li>
-                            <li>Pós Graduação em Terapia Cognitivo Comportamental-PUCRS,2022</li>
-                            <li>Curso de Perícia Judicial no Âmbito da Psicologia-Lemes & Maciel,2014</li>
-                            <li>Mini curso: Crianças e adolescentes com traços callous-unemotional
-                                (insensibilidade/frieza emocional) e problemas deconduta: atualizações teóricas e
-                                intervenções,2017</li>
-                            <li>Mini Curso:Intervenções de Proteção com Crianças Vítimas de Abuso Sexual no
-                                Judiciário,2017</li>
-                            <li>Psicopatologia Forense-Hélix Cursos,2017</li>
-                            <li>Formação em Psicologia Forense-Soc.Brasileira de Psicologia Jurídica,2017</li>
-                            <li>Curso Teste Pirâmides de Pfister-Expertise Psicologia, 2019</li>
-                            <li>Curso Teste R-PAS, Andréia Schneider Psicologia, 2019</li>
-                            <li>Curso: Violência: vítimas e agressores-Expertise Psicologia, 2020</li>
-                            <li>Curso: Tratamento à vítimas de Trauma- Sintesis Psicologia , 2020</li>
-                            <li>Treinamento de Habilidades em Terapia Comportamental Dialética-Wainer Psicologia,
-                                2020</li>
-                            <li>Formação em Terapia do Esquema-INTCC Porto Alegre, 2020</li>
-                            <li>Treinamento de Habilidades em DBT, Grupo de Habilidades para profissionais-Sintesis
-                                Psi,2021</li>
-                            <li>Mini curso de Psicologia Investigativa- I Congresso Internacional de Psicologia
-                                Forense 2022</li>
-                            <li>Formação em Terapia Comportamental Dialética- Sínteses Psicologia e Ensino- Em
-                                andamento</li>
-                            <li>Formação em Terapia Cognitiva Sexual- Aline Sardinha - Em andamento</li>
+                            <li>Prática em Psicopatologia - SAPP, PUCRS, 2016</li>
+                            <li>Prática em Avaliação Psicológica - DSA, Polícia Civil do RS, 2016</li>
+                            <li>Estágio em Psicologia Clínica - Palácio da Polícia, Polícia Civil do RS, 2017</li>
+                            <li>Estágio em Psicologia Clínica - Hospital São Lucas da PUCRS, 2018</li>
+                            <li>Coordenação de seminário em grupo de estagiários do NEPTE, PUCRS, 2020</li>
+                            <li>Avaliação psicológica no núcleo do INTCC Porto Alegre</li>
+                            <li>Atuação como psicóloga clínica em TCC, Terapia do Esquema e Terapia Comportamental Dialética</li>
+                            <li>Atuação como perita psicóloga</li>
+                            <li>Atuação como assistente técnica judicial</li>
+                            <li>Experiência em pesquisa sobre trauma, transtornos parafílicos e psicologia forense</li>
                         </ul>
                     </div>
                 </div>
             </div>
+        </section>
+    </main>
 
-            <div class="container">
-                <div class="card image-card">
-                    <div id="experiences" class="card-text">
-                        <h1>Experiencias profissionais</h1>
-                        <div>
-                            <ul>
-                                <li>Prática em Psicopatologia : SAPP:PUCRS, 2016</li>
-                                <li>Prática em Avaliação Psicológica: DSA - Policia Civil RS,2016</li>
-                                <li>Estágio em Psicologia Clinica: Palácio da Policia, Polícia Civil RS, 2017</li>
-                                <li>Estágio em Psicologia Clinica: Hospital São Lucas da PUCRS, 2018</li>
-                                <li>Coordenadora do Seminário em Grupo de Estagiários do NEPTE/PCURS, 2020</li>
-                                <li>Avaliadora do Núcleo de Avaliação Psicológica do Intcc-POA</li>
-                                <li>Psicóloga Clínica -Terapeuta em Terapia Cognitivo comportamental, Terapia do Esquema
-                                    e
-                                    Terapia Comportamental Dialética</li>
-                                <li>Perita Psicóloga</li>
-                                <li>Assistente técnica judicial</li>
-                                <li>Experiência em Pesquisa de trauma, transtornos parafílicos e psicologia forense</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="container">
+    <div class="container">
         <footer role="contentinfo">
             <div class="footer-content">
                 <div class="right-content">
-                    <img src="src/icon/icon.svg" alt="josiane icon">
-                    <nav class="footer-links">
+                    <img src="src/icon/icon.svg" alt="Ícone Josiane Becker">
+                    <nav class="footer-links" aria-label="Navegação do rodapé">
                         <ul>
-                            <li><a href="#">Blog</a></li>
-                            <li><a href="#">Sobre mim</a></li>
-                            <li><a href="#">Serviços</a></li>
+                            <li><a href="index.html">Início</a></li>
+                            <li><a href="about-me.html">Sobre mim</a></li>
+                            <li><a href="index.html#services-header">Serviços</a></li>
                         </ul>
                     </nav>
                 </div>
 
                 <div class="social-links">
-                    <span>Follow me</span>
+                    <span>Redes</span>
                     <ul>
                         <li>
-                            <a href="https://www.doctoralia.com.br/josiane-da-silva-becker/psicologo/blumenau" target="_blank" aria-label="Doctoralia"><img
-                                    src="src/icon/doctoralia.svg" loading="lazy" alt="doctoralia icon"></a>
+                            <a href="https://www.doctoralia.com.br/josiane-da-silva-becker/psicologo/blumenau" target="_blank" rel="noopener noreferrer" aria-label="Doctoralia"><img
+                                    src="src/icon/doctoralia.svg" loading="lazy" alt="Doctoralia"></a>
                         </li>
                         <li>
-                            <a href="https://api.whatsapp.com/send?phone=555181916642" target="_blank" aria-label="WhatsApp"><img
-                                    src="src/icon/whatsapp.svg" loading="lazy" alt="whatsapp icon"></a>
+                            <a href="https://api.whatsapp.com/send?phone=555181916642" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp"><img
+                                    src="src/icon/whatsapp.svg" loading="lazy" alt="WhatsApp"></a>
                         </li>
                         <li>
-                            <a href="https://www.youtube.com/channel/UC-Fn7ubg88lpcOrtLNSdhDA" target="_blank" aria-label="YouTube"><img
-                                    src="src/icon/youtube.svg" loading="lazy" alt="youtube icon"></a>
+                            <a href="https://www.youtube.com/channel/UC-Fn7ubg88lpcOrtLNSdhDA" target="_blank" rel="noopener noreferrer" aria-label="YouTube"><img
+                                    src="src/icon/youtube.svg" loading="lazy" alt="YouTube"></a>
                         </li>
                         <li>
-                            <a href="https://www.instagram.com/josianebecker.psi/" target="_blank" aria-label="Instagram"><img
-                                    src="src/icon/instagram.svg" loading="lazy" alt="instagram icon"></a>
+                            <a href="https://www.instagram.com/josianebecker.psi/" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><img
+                                    src="src/icon/instagram.svg" loading="lazy" alt="Instagram"></a>
                         </li>
                         <li>
-                            <a href="https://www.facebook.com/psicojosianebecker" target="_blank" aria-label="Facebook"><img
-                                    src="src/icon/facebook.svg" loading="lazy" alt="facebook icon"></a>
+                            <a href="https://www.facebook.com/psicojosianebecker" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><img
+                                    src="src/icon/facebook.svg" loading="lazy" alt="Facebook"></a>
                         </li>
                         <li>
-                            <a a href="https://www.linkedin.com/in/psicologajosianesbecker/" target="_blank" aria-label="LinkedIn"><img
-                                    src="src/icon/linkedin.svg" loading="lazy" alt="linkedin icon"></a>
+                            <a href="https://www.linkedin.com/in/psicologajosianesbecker/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><img
+                                    src="src/icon/linkedin.svg" loading="lazy" alt="LinkedIn"></a>
                         </li>
                     </ul>
                 </div>
             </div>
         </footer>
     </div>
-    </body>
+    <script src="script/index.js"></script>
+</body>
 
 </html>

@@ -1,42 +1,70 @@
 :root {
     --body: #faf9f9;
-
     --white: #fff;
     --black: #191919;
     --grey: #cfcfcf;
     --dark-grey: #3c3c3c;
-    
     --almost-white: #efd9fc;
-
     --font-black: #333333;
-
     --background: #8f59b3;
-
     --primary: #6c28a1;
-    --primary-010: #9060B6;
-
-    --scrollbar: #78608f;
-
+    --primary-010: #9060b6;
+    --scrollbar-track: rgba(108, 40, 161, 0.08);
+    --scrollbar-thumb: linear-gradient(180deg, rgba(144, 96, 182, 0.88) 0%, rgba(108, 40, 161, 0.88) 100%);
+    --scrollbar-thumb-solid: #8b5bb1;
+    --scrollbar-thumb-hover: #74419d;
     --secondary: #2aa88b;
     --secondary-010: #289c81;
-
-    --link: #33D9B2;
-    --link-hover:#2fc5a2;
+    --link: #33d9b2;
+    --link-hover: #2fc5a2;
+    --surface: #e7d4f0;
+    --surface-tinted: #dcc2e8;
+    --surface-tinted-strong: #cfacdf;
+    --card-background: #8f59b3;
+    --card-background-secondary: #9d6abd;
+    --surface-strong: #744694;
+    --text-on-brand: #f8f1fc;
+    --text-on-brand-soft: rgba(248, 241, 252, 0.82);
+    --text-muted: #4f4160;
+    --border-soft: rgba(25, 25, 25, 0.08);
+    --shadow-soft: 0 12px 30px rgba(25, 25, 25, 0.12);
+    --shadow-brand: 0 20px 45px rgba(108, 40, 161, 0.2);
+    --radius-card: 32px;
+    --section-width: min(1120px, calc(100% - 3rem));
 }
 
 * {
-    font-family: 'roboto', 'lexend', sans-serif;
+    box-sizing: border-box;
+    font-family: "Roboto", "Lexend", sans-serif;
     font-size: 18px;
     font-weight: 500;
-    box-sizing: border-box;
     color: var(--font-black);
-    text-align: center;
 }
 
+html {
+    scroll-behavior: smooth;
+    scrollbar-color: var(--scrollbar-thumb-solid) var(--scrollbar-track);
+    scrollbar-width: thin;
+}
 
 body {
-    background: var(--almost-white);
+    background:
+        radial-gradient(circle at top left, rgba(143, 89, 179, 0.14), transparent 28%),
+        linear-gradient(180deg, #f4ecf8 0%, #eee0f4 42%, #ead8f1 100%);
     margin: 0;
+    color: var(--font-black);
+}
+
+main,
+section,
+header,
+footer {
+    width: 100%;
+}
+
+img {
+    display: block;
+    max-width: 100%;
 }
 
 a {
@@ -45,12 +73,16 @@ a {
     cursor: pointer;
 }
 
-.container{
-    background-color: var(--almost-white);
-}
-
 a:hover {
     color: var(--dark-grey);
+}
+
+header a:hover,
+footer a:hover,
+.apresentation-card a:hover,
+.social-card:hover,
+.social-card:hover p {
+    color: var(--text-on-brand);
 }
 
 ul {
@@ -59,56 +91,108 @@ ul {
     padding: 0;
 }
 
-li{
+li,
+p {
     text-align: left;
+    line-height: 1.6;
 }
 
 h1,
 h2 {
     margin: 0;
     font-weight: 500;
+    text-align: center;
 }
 
 h1 {
     font-size: 2.5rem;
+    line-height: 1.15;
 }
 
 h2 {
     font-size: 1.5rem;
+    line-height: 1.25;
 }
 
 ::-webkit-scrollbar {
-    width: 0.4rem;
+    width: 0.6rem;
 }
 
 ::-webkit-scrollbar-track {
-    background: var(--background);
+    background: var(--scrollbar-track);
 }
 
 ::-webkit-scrollbar-thumb {
-    background: var(--scrollbar);
+    background: var(--scrollbar-thumb);
     border-radius: 100px;
-    border: 0.1rem solid var(--background);
+    border: 0.14rem solid rgba(244, 236, 248, 0.28);
 }
 
 ::-webkit-scrollbar-thumb:hover {
-    background: var(--primary-010);
+    background: var(--scrollbar-thumb-hover);
 }
 
 .btn {
-    padding: 10px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.95rem 1.4rem;
     background: var(--secondary);
-    border-radius: 20px;
+    border-radius: 999px;
+    font-weight: 700;
+    box-shadow: 0 10px 24px rgba(42, 168, 139, 0.28);
+    transition: transform 0.2s ease, background 0.2s ease, box-shadow 0.2s ease;
 }
 
 .btn:hover {
     background: var(--secondary-010);
+    transform: translateY(-1px);
+    box-shadow: 0 14px 28px rgba(42, 168, 139, 0.34);
 }
 
 .container {
     display: flex;
     flex-direction: row;
     justify-content: center;
+    width: 100%;
+}
+
+.card {
+    box-shadow: var(--shadow-soft);
+    border: 1px solid var(--border-soft);
+    border-radius: var(--radius-card);
+}
+
+header,
+footer,
+.apresentation-card,
+.social-card {
+    color: var(--text-on-brand);
+}
+
+header a,
+header span,
+footer a,
+footer span,
+.apresentation-card h1,
+.apresentation-card p,
+.apresentation-card span,
+.apresentation-card a,
+.social-card p {
+    color: inherit;
+}
+
+.card h1,
+.card h2,
+.card p,
+.card li,
+.card span,
+.card a {
+    color: var(--font-black);
+}
+
+main section + section {
+    margin-top: 0;
 }
 
 @media (max-width: 1200px) {
@@ -118,6 +202,10 @@ h2 {
 }
 
 @media (max-width: 530px) {
+    :root {
+        --section-width: min(100% - 1.25rem, calc(100% - 1.25rem));
+    }
+
     * {
         font-size: 14px;
     }
